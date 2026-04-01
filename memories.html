@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="memories-page">
+
+<audio id="bgMusic" loop>
+    <source src="assets/SpotiDownloader.com - The Best Day (Taylor’s Version) - Taylor Swift.mp3" type="audio/mpeg">
+</audio>
+
+<div id="celebrationOverlay">
+    <h2>✨ Treasured Moments ✨</h2>
+    <p style="color:#aaa; margin-top: 10px; font-size: 0.9rem;">Tap anywhere to begin</p>
+</div>
+
+<div class="carousel-container" id="mainContent" style="display:none;">
+
+    <div class="slideshow-wrapper">
+
+        <img src="assets/image (2).jpg"  class="slide" data-caption="A wonderful moment ✨">
+        <img src="assets/image (3).jpg"  class="slide" data-caption="Forever cherished 💫">
+        <img src="assets/image (4).jpg"  class="slide" data-caption="Pure happiness 🌸">
+        <img src="assets/image (5).jpg"  class="slide" data-caption="Thinking of you 💖">
+        <img src="assets/image (6).jpg"  class="slide" data-caption="Every laugh with you is a gift I keep forever 🌼">
+        <img src="assets/image (7).jpg"  class="slide" data-caption="You made ordinary days feel like magic ✨">
+        <img src="assets/image (8).jpg"  class="slide" data-caption="The warmth in this moment — just like you 🌸">
+        <img src="assets/image (9).jpg"  class="slide" data-caption="Home is wherever you are, Mum 🏡">
+        <img src="assets/image (10).jpg" class="slide" data-caption="Your smile could light up the darkest room 💛">
+        <!-- <img src="assets/image (11).jpg" class="slide" data-caption="A memory I will carry with me always 🤍">
+        <img src="assets/image (12).jpg" class="slide" data-caption="You taught me how to love the little things 🍃">
+        <img src="assets/image (13).jpg" class="slide" data-caption="Side by side — my favourite place to be 💞">
+        <img src="assets/image (14).jpg" class="slide" data-caption="Every photo with you tells a story worth telling 📖">
+        <img src="assets/image (15).jpg" class="slide" data-caption="The grace you carry is something I look up to every day 🌹">
+        <img src="assets/image (16).jpg" class="slide" data-caption="You never had to say it — I always felt it 💖">
+        <img src="assets/image (17).jpg" class="slide" data-caption="These are the days I never want to forget 🌤️">
+        <img src="assets/image (18).jpg" class="slide" data-caption="Your laughter is my favourite sound in the world 🎶">
+        <img src="assets/image (19).jpg" class="slide" data-caption="Strong, beautiful, and endlessly giving 🌺">
+        <img src="assets/image (20).jpg" class="slide" data-caption="Thank you for always showing up, no matter what 🤗"> -->
+        <!-- <img src="assets/image (21).jpg" class="slide" data-caption="A snapshot of joy — all because of you 💫">
+        <img src="assets/image (22).jpg" class="slide" data-caption="You gave me roots and wings 🦋">
+        <img src="assets/image (23).jpg" class="slide" data-caption="In every memory, you are the brightest part 🌟">
+        <img src="assets/image (24).jpg" class="slide" data-caption="I learned kindness by watching you 🤍">
+        <img src="assets/image (25).jpg" class="slide" data-caption="Time flies, but love like yours never fades 🕊️">
+        <img src="assets/image (26).jpg" class="slide" data-caption="You are the reason I believe in goodness 🌻">
+        <img src="assets/image (27).jpg" class="slide" data-caption="Every hardship you carried — you never let us see the weight 💪">
+        <img src="assets/image (28).jpg" class="slide" data-caption="A moment frozen in time, warm as your embrace 🧡">
+        <img src="assets/image (29).jpg" class="slide" data-caption="You are my first safe place 🏡">
+        <img src="assets/image (30).jpg" class="slide" data-caption="The love in your eyes — I have seen it my whole life 👁️🤍">
+        <img src="assets/image (31).jpg" class="slide" data-caption="Growing up, you were my whole world 🌍">
+        <img src="assets/image (32).jpg" class="slide" data-caption="You always knew exactly what I needed 💗">
+        <img src="assets/image (33).jpg" class="slide" data-caption="Every sacrifice you made — I see it now, and I am grateful 🙏">
+        <img src="assets/image (34).jpg" class="slide" data-caption="Your strength shaped everything I am 💎">
+        <img src="assets/image (35).jpg" class="slide" data-caption="The best moments always have you in them 🌸">
+        <img src="assets/image (36).jpg" class="slide" data-caption="You never needed a cape — you were always my hero 🦸‍♀️">
+        <img src="assets/image (37).jpg" class="slide" data-caption="Grateful does not begin to cover it 🌹">
+        <img src="assets/image (38).jpg" class="slide" data-caption="A treasure of a memory 💛">
+        <img src="assets/image (39).jpg" class="slide" data-caption="You are the thread that holds this family together 🧵">
+        <img src="assets/image (40).jpg" class="slide" data-caption="I got my resilience from you, Mum 🌊">
+        <img src="assets/image (41).jpg" class="slide" data-caption="Your patience with me was a love language of its own 🤍">
+        <img src="assets/image (42).jpg" class="slide" data-caption="Every meal, every hug, every quiet moment — I remember them all 🍽️">
+        <img src="assets/image (43).jpg" class="slide" data-caption="You are more than a mother — you are my best friend 💞">
+        <img src="assets/image (44).jpg" class="slide" data-caption="I catch myself thinking I got that from her 🌼">
+        <img src="assets/image (45).jpg" class="slide" data-caption="Your love is the kind that never asks for anything back 🕊️">
+        <img src="assets/image (46).jpg" class="slide" data-caption="How lucky I am to call you mine 🍀">
+        <img src="assets/image (47).jpg" class="slide" data-caption="A life filled with your presence is a life well lived 🌟">
+        <img src="assets/image (48).jpg" class="slide" data-caption="The world is better because you are in it 🌍">
+        <img src="assets/image (49).jpg" class="slide" data-caption="You showed me what unconditional love looks like 💖">
+        <img src="assets/image (50).jpg" class="slide" data-caption="Still my favourite person after all these years 🌺">
+        <img src="assets/image (51).jpg" class="slide" data-caption="Thank you for every prayer you said for me 🙏">
+        <img src="assets/image (52).jpg" class="slide" data-caption="You are the calm in every storm I have ever faced 🌤️">
+        <img src="assets/image (53).jpg" class="slide" data-caption="I love you more than these pictures can ever show 📸">
+        <img src="assets/image (54).jpg" class="slide" data-caption="One last look before the best part... 🎀">
+        <img src="assets/image (55).jpg" class="slide" data-caption="Almost there... something special is waiting 🎁">
+        <img src="assets/image (56).jpg" class="slide" data-caption="Happy Birthday, Mum — today and every day, you are so deeply loved ❤️"> -->
+
+        <div class="caption" id="caption"></div>
+        <button class="arrow prev" onclick="moveSlide(-1)">❮</button>
+        <button class="arrow next" onclick="moveSlide(1)">❯</button>
+    </div>
+
+    <div class="dots" id="dots"></div>
+    <div class="controls-bar">
+        <button class="pause-btn" id="pauseBtn" onclick="togglePause()">⏸ Pause</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+    // Dismiss overlay and start music on first tap/click
+    document.getElementById('celebrationOverlay').addEventListener('click', function () {
+        const music = document.getElementById('bgMusic');
+        music.play().catch(e => console.log('Autoplay blocked:', e));
+
+        this.classList.add('fade-out');
+        setTimeout(() => {
+            this.style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        }, 1000);
+    });
+</script>
+
+</body>
+</html>

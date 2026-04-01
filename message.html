@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Message</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="final-page">
+
+  <div class="envelope-wrap">
+    <div class="letter">
+
+      <svg class="paper-lines" viewBox="0 0 640 900" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#8a5c2a" stroke-width="1">
+          <line x1="0" y1="80"  x2="640" y2="80"/>
+          <line x1="0" y1="110" x2="640" y2="110"/>
+          <line x1="0" y1="140" x2="640" y2="140"/>
+          <line x1="0" y1="170" x2="640" y2="170"/>
+          <line x1="0" y1="200" x2="640" y2="200"/>
+          <line x1="0" y1="230" x2="640" y2="230"/>
+          <line x1="0" y1="260" x2="640" y2="260"/>
+          <line x1="0" y1="290" x2="640" y2="290"/>
+          <line x1="0" y1="320" x2="640" y2="320"/>
+          <line x1="0" y1="350" x2="640" y2="350"/>
+          <line x1="0" y1="380" x2="640" y2="380"/>
+          <line x1="0" y1="410" x2="640" y2="410"/>
+          <line x1="0" y1="440" x2="640" y2="440"/>
+          <line x1="0" y1="470" x2="640" y2="470"/>
+          <line x1="0" y1="500" x2="640" y2="500"/>
+          <line x1="0" y1="530" x2="640" y2="530"/>
+          <line x1="0" y1="560" x2="640" y2="560"/>
+          <line x1="0" y1="590" x2="640" y2="590"/>
+          <line x1="0" y1="620" x2="640" y2="620"/>
+          <line x1="0" y1="650" x2="640" y2="650"/>
+          <line x1="0" y1="680" x2="640" y2="680"/>
+          <line x1="0" y1="710" x2="640" y2="710"/>
+          <line x1="0" y1="740" x2="640" y2="740"/>
+          <line x1="0" y1="770" x2="640" y2="770"/>
+          <line x1="0" y1="800" x2="640" y2="800"/>
+          <line x1="0" y1="830" x2="640" y2="830"/>
+          <line x1="0" y1="860" x2="640" y2="860"/>
+        </g>
+      </svg>
+
+      <div class="stamp">🌸</div>
+
+      <div class="date">Her Special Day — April 2026</div>
+
+      <div class="salutation">To my dearest Mom,</div>
+
+      <div class="body-text">
+        <p>Happy Birthday, Mom ❤️</p>
+
+        <p>I just wanted to take a moment to tell you how much you mean to me. I'm so grateful for your love, your strength, and everything you do for me every single day. You've been my safe place, my guide, and one of my greatest blessings in life.</p>
+
+        <p>I care about you more than words can fully express, and I hope you always feel just how deeply you are loved. I truly wish for us to have many more beautiful years together filled with laughter, good health, and unforgettable memories.</p>
+
+        <p>Thank you for being everything that you are. You mean the world to me.</p>
+
+        <p>I love you always 💕</p>
+      </div>
+
+      <div class="divider">
+        <div class="divider-line"></div>
+        <span style="color:#c9956a;">✦</span>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="signature-block">
+        <div class="closing">With all my heart, today and always —</div>
+        <div class="sig-name">Gloria</div>
+      </div>
+
+      <div class="footer-row">
+        <div class="flower-row">🌸 🌼 🌿</div>
+        <button class="restart-btn" onclick="location.href='index.html'">↩ Restart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/SpotiDownloader.com - The Best Day (Taylor's Version) - Taylor Swift.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    document.addEventListener('click', () => {
+      const music = document.getElementById('bgMusic');
+      if (music && music.paused) music.play();
+    }, { once: true });
+
+    const petals = ['🌸','🌺','🌼','🍃','✿'];
+
+    function spawnPetal() {
+      const el = document.createElement('span');
+      el.className = 'petal';
+      el.textContent = petals[Math.floor(Math.random() * petals.length)];
+      el.style.left = Math.random() * 100 + 'vw';
+      el.style.top = Math.random() * 60 + 'vh';
+      const dur = 3 + Math.random() * 3;
+      el.style.animation = `fall ${dur}s linear forwards`;
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), dur * 1000);
+    }
+
+    setInterval(spawnPetal, 1800);
+    setTimeout(spawnPetal, 400);
+    setTimeout(spawnPetal, 900);
+  </script>
+
+</body>
+</html>
